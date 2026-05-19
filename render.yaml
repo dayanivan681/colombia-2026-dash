@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: colombia-2026-dash
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NOTION_TOKEN
+        sync: false
